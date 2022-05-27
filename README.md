@@ -176,3 +176,26 @@ db.[collection_name].deleteMany({})
 
 db.flyes.deleteMany({}) //delete all flyes 
 ```
+
+### Update data
+
+| Operator | Effect                               |
+| -------- | ------------------------------------ |
+| $set     | appends new key, or update if exists |
+| $unset   | remove the key from document         | 
+
+Update one data
+```sh
+db.[collection_name].updateOne({ [key]: [value] }, {$set:{[key]: [new_value]}}) // (filter, new_data)
+
+db.flyes.updateOne({ _id: 1 }, {$set:{late: true}}) // update the fly with id 1, appending new key late
+
+db.flyes.updateOne({_id: 1}, {$unset:{late: ''}}) //remove key late from fly with id 1
+```
+
+Update more than one data
+```sh
+db.[collection_name].updateMany({}, {$set:{[key]: [new_value]}}) // (filter, new_data)
+
+db.flyes.updateMany({}, {$set:{late: false}}) // update all flyes appending key late (or updating if exists)
+```

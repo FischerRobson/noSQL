@@ -27,6 +27,9 @@
 
 DB -> Collections -> Documents
 
+![mongo_architecture](https://media.geeksforgeeks.org/wp-content/uploads/20200127193216/mongodb-nosql-working.jpg)
+)
+
 Stores data in JSON.
 
 
@@ -80,28 +83,7 @@ use flyes
 
 ```sh
 db.[collection_name].insertOne([data])
-```
 
-```json
-[
-  {
-    airportOrigin: "GRU",
-    airportDestiny: "MIA",
-    airplane: "Airbus A380",
-    distance: 6500,
-    international: true
-  },
-  {
-    airportOrigin: "GRU",
-    airportDestiny: "SDU",
-    airplane: "Boeing 737",
-    distance: 450,
-    international: false
-  }
-]
-```
-
-```sh
 db.flyes.insertOne(
   {
     airportOrigin: "GRU",
@@ -126,6 +108,29 @@ db.flyes.insertOne(
     _id: 1 // isn't auto increment
   }
 )
+```
+
+#### Insert many
+
+```sh
+db.[collection_name].insertMany([data, data, data])
+
+db.flyes.insertMany([
+  {
+    airportOrigin: "GRU",
+    airportDestiny: "MIA",
+    airplane: "Airbus A380",
+    distance: 6500,
+    international: true
+  },
+  {
+    airportOrigin: "GRU",
+    airportDestiny: "SDU",
+    airplane: "Boeing 737",
+    distance: 450,
+    international: false
+  }
+])
 ```
 
 

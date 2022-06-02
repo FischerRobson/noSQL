@@ -57,6 +57,11 @@ sudo systemctl stop mongod
 mongo
 ```
 
+### Utils
+
+[Mockaroo](https://www.mockaroo.com/) -> Generate custom JSON data 
+
+
 ### Managing 
 
 #### List databases

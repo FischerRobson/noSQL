@@ -61,6 +61,11 @@ mongo
 
 [Mockaroo](https://www.mockaroo.com/) -> Generate custom JSON data 
 
+### Graphic interface
+
+* RoboMongo
+* MongoCompass
+* Mongochef
 
 ### Managing 
 
@@ -138,7 +143,6 @@ db.flyes.insertMany([
 ])
 ```
 
-
 #### Select data
 
 Brings the last data
@@ -203,4 +207,18 @@ Update more than one data
 db.[collection_name].updateMany({}, {$set:{[key]: [new_value]}}) // (filter, new_data)
 
 db.flyes.updateMany({}, {$set:{late: false}}) // update all flyes appending key late (or updating if exists)
+```
+
+#### Import data
+
+Without array
+
+```sh
+mongoimport --stopError --db [db_name] --collection [collection_name] < [file_path]
+```
+
+With array
+
+```sh
+mongoimport --stopError --db [db_name] --collection [collection_name] < [file_path] --jsonArray
 ```

@@ -28,7 +28,6 @@
 DB -> Collections -> Documents
 
 ![mongo_architecture](https://media.geeksforgeeks.org/wp-content/uploads/20200127193216/mongodb-nosql-working.jpg)
-)
 
 Stores data in JSON.
 
@@ -60,12 +59,13 @@ mongo
 ### Utils
 
 [Mockaroo](https://www.mockaroo.com/) -> Generate custom JSON data 
+[Anaconda install](https://www.digitalocean.com/community/tutorials/how-to-install-the-anaconda-python-distribution-on-ubuntu-20-04-pt) -> manage data with python
 
 ### Graphic interface
 
-* RoboMongo
-* MongoCompass
-* Mongochef
+* RoboMongo (for devs)
+* MongoCompass (for DBA)
+* Mongochef (payed)
 
 ### Managing 
 

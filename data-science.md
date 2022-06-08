@@ -12,6 +12,12 @@ Bussiness intelligence é feito para entender o que ocorreu no passado, enquanto
 * Mining e visualização de dados
 * Programação e computação
 
+| Preparação            | Engenharia de dados            | Analytics                          | Producão          |
+| --------------------- | ------------------------------ | ---------------------------------- | ----------------- |
+| Definição do objetivo | Obtenção e limpeza dos dados   | Análise exploratória e inferencias | Produtos de dados |
+| Entender o problema   | Transformação e enriquecimento | Modelação e predição               | Operacionalizar   |
+| Conhecer os dados     | Persistencia dos dados         | Comunicação                        | Otimização        | 
+    
 ## Big data
 Analise de grandes volumes de dados não estruturados.
 Processamento horizontal, uso de cloud e noSQL.
